@@ -86,7 +86,7 @@ FOO=bar
 
 In this case, the value of `FOO` environment variable will be set to `bar`.
 
-See [here](https://github.com/openshift/source-to-image/blob/master/docs/builder_image.md) for a detailed description of the requirements and scripts along with examples of builder images.
+See [here](https://github.com/Meros-io/source-to-image/blob/master/docs/builder_image.md) for a detailed description of the requirements and scripts along with examples of builder images.
 
 
 
@@ -148,9 +148,9 @@ If a `save-artifacts` script exists, a prior image already exists, and the `--in
 Assuming Go and Docker are installed and configured, execute the following commands:
 
 ```
-$ go get github.com/openshift/source-to-image
-$ cd ${GOPATH}/src/github.com/openshift/source-to-image
-$ export PATH=$PATH:${GOPATH}/src/github.com/openshift/source-to-image/_output/local/go/bin/
+$ go get github.com/Meros-io/source-to-image
+$ cd ${GOPATH}/src/github.com/Meros-io/source-to-image
+$ export PATH=$PATH:${GOPATH}/src/github.com/Meros-io/source-to-image/_output/local/go/bin/
 $ hack/build-go.sh
 ```
 
@@ -167,7 +167,7 @@ If you are using the `sudo docker` command already, then you will have to also u
 
 # Getting Started
 
-You can start using `s2i` right away (see [releases](https://github.com/openshift/source-to-image/releases))
+You can start using `s2i` right away (see [releases](https://github.com/Meros-io/source-to-image/releases))
 with the following test sources and publicly available images:
 
 ```
@@ -180,7 +180,7 @@ $ s2i build git://github.com/bparees/openshift-jee-sample openshift/wildfly-8-ce
 $ docker run --rm -i -p :8080 -t test-jee-app
 ```
 
-Interested in more advanced `s2i` usage? See [here](https://github.com/openshift/source-to-image/blob/master/docs/cli.md)
+Interested in more advanced `s2i` usage? See [here](https://github.com/Meros-io/source-to-image/blob/master/docs/cli.md)
 for detailed descriptions of the different CLI commands with examples.
 
-Running into some issues and need some advice debugging?  Peruse [here](https://github.com/openshift/source-to-image/blob/master/docs/debugging-s2i.md) for some tips.
+Running into some issues and need some advice debugging?  Peruse [here](https://github.com/Meros-io/source-to-image/blob/master/docs/debugging-s2i.md) for some tips.
